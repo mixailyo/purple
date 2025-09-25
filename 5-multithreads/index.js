@@ -3,9 +3,11 @@ const { calc } = require('./calc');
 
 const array = []
 
-for (let i = 0; i < 300001; i++) {
+for (let i = 1; i <= 300000; i++) {
   array.push(i);
 }
+
+console.log('array[array.length - 1]', array[array.length - 1])
 
 const linearCalc = async() => {
   performance.mark('start');
